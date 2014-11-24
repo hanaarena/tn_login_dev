@@ -2,11 +2,11 @@
 
 /* clear alert message */
 f1.bind('click', function() {
-	$('.form li:first-child').html('');
+	$('.form:first li:first-child').html('');
 });
 
 f2.bind('focus', function() {
-	$('.form li:first-child').html('');
+	$('.form:first li:first-child').html('');
 });
 
 /* f2 on foucs */
@@ -22,7 +22,7 @@ f2.focus(function() {
 
 /* submit */
 sub.click(function() {
-	$('.form li:first-child').html('');
+	$('.form:first li:first-child').html('');
 	if(f1.val() == '') {
 		f2.focus();
 	} else if(f2.val() == '') {
